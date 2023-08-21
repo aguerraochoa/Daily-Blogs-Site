@@ -1,0 +1,21 @@
+<%- include("partials/header.ejs") %>
+
+<section class="top-bar">
+    <a href="/" class="top-bar-title">Daily Blogs</a>
+    <a class="type-button" href="/logout">Logout</a>
+</section>
+
+<section class="blogs-section">
+    <% blogs.forEach((blog) => { %>
+        <a href="/posts/<%=blog._id%>" class="blog">
+            <p class="blog-title"><%=blog.title%></p>
+            <p class="blog-description"><%=blog.description%></p>
+        </a>
+    <%})%>
+</section>
+
+<section class="edit-blog">
+    <a href="/add-post">Add Post</a>
+</section>
+
+<%- include("partials/footer.ejs") %>
