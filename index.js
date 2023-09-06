@@ -168,16 +168,6 @@ app.delete('/delete-post/:id', authMiddleware, checkPost, async (req,res) => {
     }
 });
 
-// app.delete('/delete-all', async (req,res) => {
-//     try {
-//         await Blogs.deleteMany( {} );
-//         await new Promise(resolve => setTimeout(resolve, 300));
-//         res.redirect('/');
-//     } catch (error) {
-//         console.log(error.message);
-//     }
-// });
-
 app.put('/edit-post/:id', authMiddleware, checkPost, async (req,res) => {
     try {
         const editedBlog = {
