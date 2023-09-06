@@ -39,5 +39,5 @@ Before you begin, ensure that you have the following requirements:
   - Run the command "npm install" in the projects directory.
 
 **6. Start the application**
-  - Run the command "npm start" in the projects directory.
+  - Run the command "node index.js" in the projects directory.
   - Open your browser and navigate to "http://localhost:3000".
